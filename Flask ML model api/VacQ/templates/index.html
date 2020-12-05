@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Contact form</title>
+  <link rel="icon" href="https://mcknightbrain.org/wp-content/uploads/2020/07/sars-cov-19.jpg" type="image/gif"
+    sizes="16x16">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <style>
+    html,
+    body {
+      min-height: 100%;
+      padding: 0;
+      margin: 0;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 14px;
+      color: #666;
+      background-image: url("{{url_for('static',filename="VacQ.JPG")}}");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    h1 {
+      margin: 0 0 20px;
+      font-weight: bolder bolder;
+      font-size: 40px;
+      color: #235458;
+    }
+
+    p {
+      margin: 0 0 5px;
+    }
+
+    .main-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      /* background: #ffffff2a; */
+
+    }
+
+    form {
+      padding: 25px;
+      margin: 25px;
+      box-shadow: 0 2px 5px #f5f5f5;
+      background: #f5f5f5;
+      background-color: rgba(241, 241, 241, 0.623);
+
+    }
+
+    .fas {
+      margin: 25px 10px 0;
+      font-size: 72px;
+      color: #fff;
+    }
+
+    .fa-envelope {
+      transform: rotate(-20deg);
+    }
+
+    .fa-at,
+    .fa-mail-bulk {
+      transform: rotate(10deg);
+    }
+
+    input,
+    textarea,
+    select {
+      width: calc(100% - 18px);
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #1c87c9;
+      outline: none;
+    }
+
+    input::placeholder {
+      color: #666;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      background: #1c87c9;
+      font-size: 16px;
+      font-weight: 400;
+      color: #fff;
+    }
+
+    button:hover {
+      background: #2371a0;
+    }
+
+    @media (min-width: 568px) {
+      .main-block {
+        flex-direction: row;
+      }
+
+      .left-part,
+      form {
+        width: 50%;
+      }
+
+      .fa-envelope {
+        margin-top: 0;
+        margin-left: 20%;
+      }
+
+      .fa-at {
+        margin-top: -10%;
+        margin-left: 65%;
+      }
+
+      .fa-mail-bulk {
+        margin-top: 2%;
+        margin-left: 28%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main-block">
+    <div class="left-part">
+      <i class="fas fa-envelope"></i>
+      <i class="fas fa-at"></i>
+      <i class="fas fa-mail-bulk"></i>
+    </div>
+    <form class="frm" action="/predict" method="POST">
+      <h1>Check Priority</h1>
+      <div class="info">
+        <select name="gender" id="gender">
+          <option value=-1>Gender</option>
+
+          <option value=1>Male</option>
+          <option value=0>Female</option>
+        </select>
+        <input type="text" name="age" placeholder="Age">
+        <select name="diseases" id="diseases">
+          <option value=-1>Health History</option>
+
+          <option value=9>None</option>
+          <option value=5>Heart Disease</option>
+          <option value=4>Diabetes</option>
+          <option value=6>Hypertension</option>
+          <option value=0>Asthma</option>
+          <option value=7>Immuno Compromised State</option>
+          <option value=8>Liver Disease</option>
+          <option value=1>Cancer</option>
+          <option value=10>Severe Obesity</option>
+          <option value=2>Chronic Lung Disease</option>
+          <option value=11>Sickle Cell Disease</option>
+          <option value=3>Cystic Fibrosis</option>
+        </select>
+        <select name="zone" id="zone">
+          <option value=-1>Zone</option>
+
+          <option value=2>Red</option>
+          <option value=1>Orange</option>
+          <option value=0>Green</option>
+        </select>
+        <select name="profession" id="profession">
+          <option value=-1>Profession</option>
+
+          <option value=6>Healthcare Worker</option>
+          <option value=0>Administrative</option>
+          <option value=5>Farmer</option>
+          <option value=13>Student</option>
+          <option value=2>Educator</option>
+          <option value=14>Technician</option>
+          <option value=12>Scientist</option>
+          <option value=3>Engineer</option>
+          <option value=9>Marketing</option>
+          <option value=1>Artist</option>
+          <option value=4>Entertainer</option>
+          <option value=7>Homemaker</option>
+          <option value=11>Salesman</option>
+          <option value=8>Housekeeper</option>
+          <option value=10>Others</option>
+        </select>
+      </div>
+      <button type="submit" href="/">Submit</button>
+    </form>
+  </div>
+
+
+</body>
+
+</html>
