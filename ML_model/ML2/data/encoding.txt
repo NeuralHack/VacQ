@@ -1,0 +1,37 @@
+Label Encoder:
+1)Gender
+	Male=1
+	Female=0
+2)Zone
+	Red=2
+	Orange=1
+	Green=0
+3)Diseases
+	Heart Disease=5
+	Chronic Lung Disease=2
+	Sickle Cell Disease=11
+	Diabetes=4
+	Immuno Compromised State=7
+	Cancer=1
+	Asthma=0
+	Severe Obesity=10
+	None=9
+	Liver disease=8
+	Cystic Fibrosis=3
+	Hyper Tension=6
+4)Profession
+	salesman=11
+	homemaker=7
+	others=10
+	educator=2
+	artist=1
+	farmers=5
+	administrative=0
+	technician=14
+	scientist=12
+	marketing=9
+	housekeeping=8
+	engineer=3
+	student=13
+	healthcare=6
+	entertainment=4
