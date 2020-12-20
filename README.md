@@ -7,3 +7,4 @@ PROJECT VIDEO: https://www.youtube.com/watch?v=-miUx8B35No
 ![image](AppDesign/Google%20Pixel%202%20XL%20-%201.png)<br/><br/><br/>
 ![image](AppDesign/Google%20Pixel%202%20XL%20-%2012.png)<br/><br/><br/>
 ![image](AppDesign/Google%20Pixel%202%20XL%20-%206.png)<br/><br/><br/>
+THANKYOU!
