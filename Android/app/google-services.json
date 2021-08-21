@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "194027551094",
+    "project_id": "vacq-f3429",
+    "storage_bucket": "vacq-f3429.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:194027551094:android:a0fa5500a0d349c93f2257",
+        "android_client_info": {
+          "package_name": "com.example.vacq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "194027551094-179ndq75q0rfobp1lud0s66fgirs3sk7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vacq",
+            "certificate_hash": "53dac16342c9e54e5e7fd1dc5e56a386797dfc8b"
+          }
+        },
+        {
+          "client_id": "194027551094-lhfnu19pkupqg3nm1qr0s428465qn1ju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8MNB4_f5cSJAMXAql_1fSskKO0MAjlZo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "194027551094-lhfnu19pkupqg3nm1qr0s428465qn1ju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
